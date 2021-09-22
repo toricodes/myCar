@@ -1,58 +1,69 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
-void bestCar(string model, string make, string color, int hPower, int MPG, string Cengine, string cTransmission);
 
-int main()
-{
+class bestCar {
+    public:
+    string brand;
     string model;
     string make;
     string color;
-    int MPG;
     string engine;
     string transmission;
+    int MPG;
+    int year;
+    int hPower;
+};
 
-    bestCar(model, make, color, hPower, MPG, engine, transmission);
-}
+int main()
+{
+     bestCar bCar;
 
-void bestCar(string model, string make, string color,int hPower, int Cmpg, string Cengine, string cTransmission){
-    cout << "Enter model of car: " << endl;
-    cin >> Cmodel;
-    getline(cin, Cmodel);
+     bCar.brand;
+     cout << "Enter a car you like: " << endl;
+     cin >> bCar.brand;
 
-    cout << "Enter make of car: " << endl;
-    cin >> Cmake;
-    getline(cin, Cmake);
+     bCar.model;
+     cout << "Enter the car's model: " << endl;
+     cin >> bCar.model;
 
-    cout << "Enter color of car: " << endl;
-    cin >> Ccolor;
-    getline(cin, Ccolor);
+     bCar.make;
+     cout << "Enter the car's make: " << endl;
+     cin >> bCar.make;
 
-    cout << "Enter horsepower of car: " << endl;
-    cin >> ChPower;
-    getline(cin, ChPower);
+     bCar.color;
+     cout << "Enter the car's color: " << endl;
+     cin >> bCar.color;
 
-    cout << "Enter miles per gallon of car: " << endl;
-    cin >> Cmpg;
-    getline(cin, Cmpg);
+     bCar.engine;
+     cout << "Enter the car's engine type: " << endl;
+     cin >> bCar.engine;
 
-    cout << "Enter engine type of car: " << endl;
-    cin >> Cengine;
-    getline(cin, Cengine);
+     bCar.transmission;
+     cout << "Enter the car's transmission type: " << endl;
+     cin >> bCar.transmission;
 
-    cout << "Enter transmission type of car: " << endl;
-    cin >> cTransmission;
-    getline(cin, cTransmission);
+     bCar.MPG;
+     cout << "Enter a car's miles per gallon: " << endl;
+     cin >> bCar.MPG;
 
-    cout << "======================= Your Dream Car ======================== " << endl;
+     bCar.year;
+     cout << "Enter the car's year: " << endl;
+     cin >> bCar.year;
 
-    cout << "Car Model: " << endl;
-    cout << "Car Make: " << endl;
-    cout << "Car Color: " << endl;
-    cout << "Car Horsepower: " << endl;
-    cout << "Car MPG: " << endl;
-    cout << "Car Engine: " << endl;
-    cout << "Car Transmission: " << endl;
+     bCar.hPower;
+     cout << "Enter the car's horsepower: " << endl;
+     cin >> bCar.hPower;
 
-    cout << "=============================================================== " << endl;
+     cout << bCar.brand << " " << endl;
+     cout << bCar.model << " " << endl;
+     cout << bCar.make << " " << endl;
+     cout << bCar.color << " " << endl;
+     cout << bCar.engine << " " << endl;
+     cout << bCar.transmission << " " << endl;
+     cout << bCar.MPG << " " << endl;
+     cout << bCar.year << " " << endl;
+     cout << bCar.hPower << " " << endl;
+
 }
