@@ -56,14 +56,14 @@ int main()
      cout << "Enter the car's horsepower: " << endl;
      cin >> bCar.hPower;
 
-     cout << bCar.brand << " " << endl;
-     cout << bCar.model << " " << endl;
-     cout << bCar.make << " " << endl;
-     cout << bCar.color << " " << endl;
-     cout << bCar.engine << " " << endl;
-     cout << bCar.transmission << " " << endl;
-     cout << bCar.MPG << " " << endl;
-     cout << bCar.year << " " << endl;
-     cout << bCar.hPower << " " << endl;
+     cout << "Brand: " << bCar.brand << " " << endl;
+     cout << "Model: " << bCar.model << " " << endl;
+     cout << "Make: " << bCar.make << " " << endl;
+     cout << "Color: " << bCar.color << " " << endl;
+     cout << "Engine Type: " << bCar.engine << " " << endl;
+     cout << "Transmission Type: " << bCar.transmission << " " << endl;
+     cout << "Miles Per Gallon: " << bCar.MPG << " " << endl;
+     cout << "Year: " << bCar.year << " " << endl;
+     cout << "Horsepower Type: " << bCar.hPower << " " << endl;
 
 }
